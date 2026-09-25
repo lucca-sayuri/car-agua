@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
   --font-dm: "DM Sans", sans-serif;
+  --font-lora: "Lora";
   --color-green: rgb(87 204 152);
+  --color-slate: rgb(16 42 59);
 }
 
 * {
@@ -12,5 +14,38 @@
 header {
   width: 100%;
   background-color: var(--color-green);
-  height: 100px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--font-lora);
+  text-transform: uppercase;
+  position: relative;
+  left: 40px;
+}
+
+#logo-text {
+  text-decoration: none;
+  color: var(--color-slate);
+}
+
+.nav-bar {
+  font-family: var(--font-dm);
+  position: absolute;
+  right: 160px;
+  display: flex;
+  justify-items: space-around;
+  gap: 35px;
+}
+
+.nav-bar * {
+  color: var(--color-slate);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

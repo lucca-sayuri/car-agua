@@ -1,8 +1,25 @@
+import { NavLink } from "react-router"
+
+function navLinkClass({ isActive }) {
+    return isActive ? "highlighted" : ""
+}
+
+
 export default function Header() {
     return (
         <>
             <header>
-                
+                <div className="logo">
+                    <NavLink to="/" id="logo-text">CarÁgua</NavLink>
+                </div>
+
+                <nav className="nav-bar">
+                    <NavLink to="/" className={navLinkClass}>Início</NavLink>
+                    <NavLink to="/info" className={navLinkClass}>Saneamento</NavLink>
+                    <NavLink to="/noticias" className={navLinkClass}>Notícias</NavLink>
+                    <NavLink to="/mural" className={navLinkClass}>Mural</NavLink>
+                    <NavLink to="/login" className={navLinkClass}>Entrar</NavLink>
+                </nav>
             </header>
         </>
     )
