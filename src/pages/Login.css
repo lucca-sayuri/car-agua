@@ -1,0 +1,50 @@
+.mainsection {
+    width: 100%;
+    height: 100%;
+}
+.boardsection {
+    width: 20%;
+    height: 100%;
+    background-color: #37a3a5;
+}
+.splitsection {
+    display: flex;
+}
+/*Y: pior programador de todos os tempos */
+/*Y: até tendei fazer a main ter 80% e a board 20%
+     mas não tava dividindo direito na minha tela ent eu fiz isso ai */
+
+#alert-title {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.login-area {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #c8f9cc;
+} 
+.login-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-zure);
+    border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/
+    height: 248px;
+    color: whitesmoke;
+    padding: 32px;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+}
+.form-login label, input {
+    width: 100%;
+}
+.form-login input {
+    background-color: #5dcbcd;
+    border: solid wheat 2px;
+    border-radius: 12px;
+}

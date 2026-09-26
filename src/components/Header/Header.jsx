@@ -1,8 +1,8 @@
 import { NavLink } from "react-router"
-
+import "./Header.css"
 function navLinkClass({ isActive }) {
-    return isActive ? "highlighted" : ""
-}
+    return isActive ? "highlighted-nav-link" : "" 
+}   
 
 
 export default function Header() {

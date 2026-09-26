@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
+import { AuthProvider } from "./context/AuthContext";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
 import Login from "./pages/Login";
@@ -9,9 +10,10 @@ import News from "./pages/News";
 import Register from "./pages/Register";
 
 import "./index.css";
-
+//Y: até já daria pra trancar as outras páginas se !tiverlogado mas isso dificultaria os tests;
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <AuthProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -21,6 +23,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/noticias" element={<News/>}/>
         <Route path="/cadastro" element={<Register/>}/>
       </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
+      </AuthProvider>
   </StrictMode>,
 );
