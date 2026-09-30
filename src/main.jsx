@@ -2,12 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { AuthProvider } from "./context/AuthContext";
-import Home from "./pages/Home";
-import Info from "./pages/Info";
-import Login from "./pages/Login";
-import Mural from "./pages/Mural";
-import News from "./pages/News";
-import Register from "./pages/Register";
+import Home from "./pages/Home/Home";
+import Info from "./pages/Info/Info";
+import Login from "./pages/Login/Login";
+import Mural from "./pages/Mural/Mural";
+import News from "./pages/News/News";
+import Register from "./pages/Register/Register";
 
 import "./index.css";
 //Y: até já daria pra trancar as outras páginas se !tiverlogado mas isso dificultaria os tests;
