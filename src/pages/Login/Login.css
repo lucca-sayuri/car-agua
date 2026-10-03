@@ -1,5 +1,5 @@
 .mainsection {
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 .boardsection {
@@ -30,21 +30,58 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 24px;
     background-color: var(--color-zure);
     border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/
     height: 248px;
-    color: whitesmoke;
-    padding: 32px;
+    min-width: 360px;
+    color: var(--color-white);
+    padding: 18px 20px; 
 }
+
+.login-box h1 {
+    font-size: 28px;
+}
+
 .form-login {
     display: flex;
     flex-direction: column;
-}
-.form-login label, input {
+    align-items: center;
     width: 100%;
+    }
+
+.form-login label, input {
+    font-family: var(--font-hanken);
+    font-weight: bold;
+    font-size: 16px;
 }
+
+.form-login label {
+    align-self: start;
+    margin-bottom: 4px;
+}
+
 .form-login input {
-    background-color: #5dcbcd;
-    border: solid wheat 2px;
+    background-color: #37a3a5;
+    color: var(--color-white);
     border-radius: 12px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 4px 6px;
+    width: 100%;
+    border-width: 2px;
+    border-style: hidden;;
+}
+
+.form-login input:focus {
+    background-color: #5dcbcd;
+    border-style: solid;
+    border-color: var(--color-white);
+    outline: none;
+    color: var(--color-slate)
+}
+
+.form-login input::placeholder {
+    color: #5dd2d4;
+    font-weight: initial;
 }

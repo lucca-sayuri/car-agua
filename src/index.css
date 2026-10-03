@@ -1,14 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
   --font-dm: "DM Sans", sans-serif;
   --font-lora: "Lora";
+  --font-hanken: "Hanken Grotesk", sans-serif;
   --color-green: rgb(87 204 152);
   --color-slate: rgb(16 42 59);
   --color-zure: rgb(35 86 120);
+  --color-white: rgb(248, 250, 252)
 }
 
 * {
   margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-lora);
+}
+
+p {
+  font-family: var(--font-dm)
 }
 
