@@ -3,7 +3,9 @@ import { useState } from "react";
 import "./Login.css"
 import { loginApi } from '../../api/auth-service';
 import { useAuth } from '../../context/AuthContext';
+import { NavLink } from "react-router";
 import backgroundTexture from "../../assets/background-texture.png";
+
 //o código tá bem poluido e grande, mas se tudo der certo isso é meio que uma
 //base pra quando a gente tiver uma api no nestjs (SE tudo der certo)
 export default function Login() {
@@ -30,7 +32,7 @@ export default function Login() {
                         <div className="login-box">
                             <h1>LOGIN</h1>
                             <form className="form-login" onSubmit={handleSubmit}>
-                                <label for="email">Nome ou e-mail</label>
+                                <label htmlFor="email">Nome ou e-mail</label>
                                 <input
                                     type="email"
                                     name="email"
@@ -38,7 +40,7 @@ export default function Login() {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
-                                <label for="password">Senha</label>
+                                <label htmlFor="password">Senha</label>
                                 <input
                                     type="password"
                                     name="password"
@@ -46,8 +48,13 @@ export default function Login() {
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
-                                <button type="submit">Enter</button>
+                                <button type="submit">Entrar</button>
                             </form>
+
+                            <div className="login-redirects">
+                                <NavLink to="/cadastro">Não tem uma conta?</NavLink>
+                                <NavLink to="/suporte">Esqueceu a sua senha?</NavLink>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -55,9 +62,6 @@ export default function Login() {
                     <div className="alert-board">
                         <h1 id="alert-title"> Alertas </h1>
                         <ul className="alert-list">
-                            <li></li>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </div>
                 </section>

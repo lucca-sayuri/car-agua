@@ -1,32 +1,4 @@
-.mainsection {
-    width: 80%;
-    height: 100%;
-}
-.boardsection {
-    width: 20%;
-    height: 100%;
-    background-color: #37a3a5;
-}
-.splitsection {
-    display: flex;
-}
-/*Y: pior programador de todos os tempos */
-/*Y: até tendei fazer a main ter 80% e a board 20%
-     mas não tava dividindo direito na minha tela ent eu fiz isso ai */
-
-#alert-title {
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-}
-.login-area {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    background-color: #c8f9cc;
-} 
-.login-box {
+.register-box {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,31 +7,32 @@
     border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/    min-width: 360px;
     color: var(--color-white);
     padding: 18px 20px; 
+    max-width: 360px;
 }
 
-.login-box h1 {
+.register-box h1 {
     font-size: 28px;
 }
 
-.form-login {
+.form-register {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    }
+}
 
-.form-login label, input {
+.form-register label, input {
     font-family: var(--font-hanken);
     font-weight: bold;
     font-size: 16px;
 }
 
-.form-login label {
+.form-register label {
     align-self: start;
     margin-bottom: 4px;
 }
 
-.form-login input {
+.form-register input {
     border: none;
     outline: none;
     background-color: #37a3a5;
@@ -73,19 +46,19 @@
     outline-style: hidden;
 }
 
-.form-login input:focus {
+.form-register input:focus {
     outline-style: solid;
     outline-color: var(--color-white);
     background-color: #5dcbcd;
     color: var(--color-slate)
 }
 
-.form-login input::placeholder {
+.form-register input::placeholder {
     color: #5dd2d4;
     font-weight: initial;
 }
 
-.form-login button {
+.form-register button {
     border: none;
     border-radius: 10px;
     background-color: #57cb97;
@@ -95,20 +68,19 @@
     font-family: var(--font-lora);
     color: var(--color-white);
     margin-top: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
-.form-login button:hover {
+.form-register button:hover {
     cursor: pointer;
     background-color: #3fa392;
 }
 
-.login-redirects {
+.register-redirects {
     display: flex;
-    gap: 16px;
 }
 
-.login-redirects a {
+.register-redirects a {
     color: var(--color-white);
     font-weight: bold;
     font-size: 14px;
