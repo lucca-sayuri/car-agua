@@ -1,8 +1,11 @@
-export default function InfoText (text, title) {
+export default function InfoText () {
     return (
         <>
-            <h1>{title}</h1>
-            <p>{text}</p>
+            <div className="info-text-box">
+                <h1>
+                    Água
+                </h1>
+            </div>
         </>
     )
 }

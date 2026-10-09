@@ -1,11 +1,9 @@
 import { NavLink } from "react-router";
-import Header from "../../components/Header/Header";
 import './Register.css'
 
 export default function Register() {
     return (
         <>
-            <Header />
 
             <div className="register-box">
                 <h1>CADASTRO</h1>

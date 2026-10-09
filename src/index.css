@@ -10,6 +10,10 @@
   --color-white: rgb(248, 250, 252)
 }
 
+body {
+  background-color: #c8f9cc;
+}
+
 * {
   margin: 0px;
 }

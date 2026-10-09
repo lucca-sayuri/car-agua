@@ -1,13 +1,13 @@
-import { Outlet } from "react-router"
-import Header from "../../components/Header/Header"
 import './Info.css'
+import InfoNav from "../../components/InfoNav/InfoNav"
+import InfoText from '../../components/InfoText/InfoText'
 
 export default function Info() {
     return (
         <>
-            <Header/>
+            <InfoNav/>
 
-            <Outlet/>
+            <InfoText/>
         </>
     )
 }

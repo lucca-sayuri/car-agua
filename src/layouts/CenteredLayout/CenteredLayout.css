@@ -1,0 +1,6 @@
+.centered-layout {
+    display: flex;
+    min-height: 80dvh;
+    justify-content: center;
+    margin: 40px;
+}

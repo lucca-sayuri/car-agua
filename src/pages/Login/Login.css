@@ -19,13 +19,7 @@
     text-align: center;
     text-transform: uppercase;
 }
-.login-area {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    background-color: #c8f9cc;
-} 
+
 .login-box {
     display: flex;
     align-items: center;
@@ -34,7 +28,9 @@
     background-color: var(--color-zure);
     border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/    min-width: 360px;
     color: var(--color-white);
-    padding: 18px 20px; 
+    padding: 18px 20px;
+    max-width: 480px;
+    max-height: fit-content;
 }
 
 .login-box h1 {
