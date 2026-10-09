@@ -5,6 +5,7 @@ function infoNavClass ({ isActive }) {
 }
 
 export default function InfoNav() {
+
     return (
         <>
             <div className="info-nav-box">

@@ -1,13 +1,15 @@
-import './Info.css'
-import InfoNav from "../../components/InfoNav/InfoNav"
-import InfoText from '../../components/InfoText/InfoText'
+import "./Info.css";
+import InfoNav from "../../components/InfoNav/InfoNav";
+import InfoText from "../../components/InfoText/InfoText";
 
 export default function Info() {
     return (
         <>
-            <InfoNav/>
+            <div className="info-area">
+                <InfoNav />
 
-            <InfoText/>
+                <InfoText />
+            </div>
         </>
-    )
+    );
 }
