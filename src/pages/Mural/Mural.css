@@ -1,0 +1,46 @@
+.mural-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    width: 60%;
+}
+
+.mural-search-box {
+    background-color: var(--color-zure);
+    display: flex;
+    max-height: fit-content;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 12px;
+    color: var(--color-white);
+}
+
+.mural-search-box h1 {
+    font-size: 26px;
+}
+
+.mural-search-area {
+    display: flex;
+    align-items: center;
+}
+
+.mural-filter {
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 20px;
+    padding: 3px 2px;
+    width: fit-content;
+    font-family: var(--font-hanken);
+    font-weight: bold;
+    font-size: 16px;
+    appearance: none;
+    text-align: center;
+}
+
+.mural-filter hr {
+    border-width: 100%;
+}

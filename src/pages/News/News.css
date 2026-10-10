@@ -1,0 +1,64 @@
+.news-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    width: 60%;
+}
+
+.search-bar {
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.search-button {
+    background-color: #37a3a5;
+    border: none;
+    border-radius: 40px;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    right: 30px;
+}
+
+.search-button:hover {
+    background-color:#428599;
+    cursor: pointer;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    background-color: var(--color-zure);
+    display: flex;
+    max-height: fit-content;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 12px;
+}
+
+.search-box h1 {
+    color: var(--color-white);
+    font-size: 26px;
+}
+
+.news-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 54px;
+}

@@ -1,0 +1,47 @@
+.card-box {
+    background-color: var(--color-white);
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.card-cover {
+    height: 120px;
+}
+
+.text-area {
+    padding: 2px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.text-area h1 {
+    font-size: 22px;
+}
+
+.text-area p {
+    font-size: 14px;
+    font-family: var(--font-hanken);
+    text-align: justify;
+}
+
+.text-area a {
+    font-family: var(--font-hanken);
+    font-size: 14px;
+    color: var(--color-slate);
+}
+
+.text-area a:hover {
+    color: rgb(34, 84, 117);
+}
