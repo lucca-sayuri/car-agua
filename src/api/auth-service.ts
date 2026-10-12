@@ -1,11 +1,21 @@
-export const loginApi = async (credentials: { email: string, password: string }) => {
-    // delay de meme
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+import { supabase } from '../lib/supabaseClient'
 
-    // isso aqui é só pra quando tiver api poder funfa, por enquanto so funfa esse email e senha
-    if (credentials.email === "john@api.com" && credentials.password === "janepassword") {
-        return { token: "fake-jwt-token-from-nestjs" };
-    }
+export async function registerUser(email: string, password: string, name: string) {
+  const { data, error } = await supabase.auth.signUp({email, password, options: {data: {name,},},})
 
-    throw new Error("Invalid credentials");
-};
+  if (error) throw error
+  return data
+}
+
+export async function loginUser(email: string, password: string) {
+  const { data, error } = await supabase.auth.signInWithPassword({email, password,})
+
+  if (error) throw error
+  return data
+}
+
+export async function logoutUser() {
+  const { error } = await supabase.auth.signOut()
+
+  if (error) throw error
+}
