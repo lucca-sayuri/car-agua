@@ -32,13 +32,13 @@
     background-color: var(--color-white);
     border: none;
     border-radius: 20px;
-    padding: 3px 2px;
+    padding: 3px 12px;
     width: fit-content;
     font-family: var(--font-hanken);
     font-weight: bold;
     font-size: 16px;
     appearance: none;
-    text-align: center;
+    text-align: left;
 }
 
 .mural-filter hr {

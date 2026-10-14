@@ -1,3 +1,5 @@
+import WriteArea from '../../components/WriteArea/WriteArea'
+import placeholder from '../../assets/placeholder.png'
 import './Mural.css'
 
 export default function Mural() {
@@ -19,6 +21,9 @@ export default function Mural() {
                         <button className=" search-button"></button>
                     </div>
                 </div>
+
+                <WriteArea pfp={placeholder} />
+
             </div>
         </>
     )
