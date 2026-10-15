@@ -28,19 +28,56 @@
     align-items: center;
 }
 
+select,
+::picker(select) {
+    appearance: base-select;
+}
+
+select::picker-icon {
+  transition: 0.2s rotate;
+}
+
+select:open::picker-icon {
+  rotate: 180deg;
+}
+
+option::checkmark {
+    display: none;
+}
+
+selectedcontent, option {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
 .mural-filter {
     background-color: var(--color-white);
     border: none;
     border-radius: 20px;
     padding: 3px 12px;
-    width: fit-content;
+    width: 15%;
+    color: black;
     font-family: var(--font-hanken);
-    font-weight: bold;
     font-size: 16px;
-    appearance: none;
     text-align: left;
+}
+
+.mural-filter option:checked {
+    background-color: #b0dcdd;
+    font-weight: bold;
 }
 
 .mural-filter hr {
     border-width: 100%;
+}
+
+.mural-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: var(--color-green);
+    border-radius: 20px;
+    overflow: hidden;
 }

@@ -1,6 +1,8 @@
 import './News.css'
 import NewsCard from '../../components/NewsCard/NewsCards'
 import placeholder from "../../assets/placeholder.png"
+import { FaSearch } from "react-icons/fa";
+
 
 export default function News() {
     return (
@@ -11,7 +13,7 @@ export default function News() {
                     <h1>NOTÍCIAS RECENTES</h1>
                     <div className='search-area'>
                         <input type="search" name="search" className="search-bar" placeholder="Procurar..." />
-                        <button className="search-button"></button>
+                        <button className="search-button"><FaSearch/></button>
                     </div>
                 </div>
 

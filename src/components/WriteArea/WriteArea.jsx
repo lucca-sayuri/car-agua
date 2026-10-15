@@ -1,4 +1,8 @@
 import './WriteArea.css'
+import { IoMdImage } from "react-icons/io";
+import { MdOutlineGifBox } from "react-icons/md";
+import { HiOutlineEmojiHappy } from "react-icons/hi";
+
 
 export default function WriteArea({pfp}) {
     return (
@@ -13,9 +17,9 @@ export default function WriteArea({pfp}) {
                 </div>
                 <div className='bottom-area'>
                     <div className='icons-area'>
-                        a
-                        b
-                        c
+                        <IoMdImage/>
+                        <MdOutlineGifBox/>
+                        <HiOutlineEmojiHappy/>
                     </div>
 
                     <button type="submit" className='post-button'>ENVIAR</button>

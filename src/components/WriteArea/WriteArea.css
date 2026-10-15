@@ -43,16 +43,18 @@
     background-color: transparent;
     field-sizing: content;
     height: fit-content;
-    border-bottom: 2px solid #5dcbcd;
     font-size: 18px;
     font-weight: normal;
     border-color: #5dcbcd;
     position: relative;
     left: 10px;
+    caret-color: #59a393;
+    color: var(--color-white);
 }
 
 .write-input::placeholder {
     color: #5dcbcd;
+    border-bottom: 2px solid #5dcbcd;
 }
 
 .write-pfp img {
@@ -72,8 +74,15 @@
 .icons-area {
     position: relative;
     left: 50px;
+    font-size: 24px;
     color: var(--color-white);
     display: flex;
     justify-content: center;
     max-width: fit-content;
+    gap: 16px;
+}
+
+.icons-area *:hover {
+    color: rgb(200, 218, 218);
+    cursor: pointer;
 }
