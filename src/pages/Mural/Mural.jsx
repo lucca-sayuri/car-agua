@@ -29,10 +29,14 @@ export default function Mural() {
 
                 <WriteArea pfp={placeholder} />
 
-                <div className='mural-grid'>
+                <div className='grid-area'>
+                    <div className='mural-grid'>
                     <Post/>
                     <Post/>
                     <Post/>
+                    <Post/>
+                    <Post/>
+                </div>
                 </div>
 
             </div>

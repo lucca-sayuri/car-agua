@@ -51,7 +51,7 @@
     max-height: fit-content;
     justify-content: space-around;
     box-sizing: border-box;
-    width: 100%;
+    width: 85%;
     align-items: center;
     padding: 20px 0px;
     border-radius: 12px;
@@ -64,7 +64,7 @@
 
 .news-grid {
     display: grid;
-    width: 100%;
+    width: 85%;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 54px;
+    gap: 80px;
 }

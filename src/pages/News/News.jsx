@@ -22,25 +22,25 @@ export default function News() {
                     image={placeholder}
                     title={"coisa ruim"}
                     source={"localhost:5173/noticias"} 
-                    desc={"Lorem ipsum dolor tornado tornado tempestade morte triste"}
+                    desc={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus illum id doloremque magnam."}
                     />
                     <NewsCard
                     image={placeholder}
                     title={"coisa ruim"}
                     source={"localhost:5173/noticias"} 
-                    desc={"Lorem ipsum dolor tornado tornado tempestade morte triste"}
+                    desc={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus illum id doloremque magnam."}
                     />
                     <NewsCard
                     image={placeholder}
                     title={"coisa ruim"}
                     source={"localhost:5173/noticias"} 
-                    desc={"Lorem ipsum dolor tornado tornado tempestade morte triste"}
+                    desc={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus illum id doloremque magnam."}
                     />
                     <NewsCard
                     image={placeholder}
                     title={"coisa ruim"}
                     source={"localhost:5173/noticias"} 
-                    desc={"Lorem ipsum dolor tornado tornado tempestade morte triste"}
+                    desc={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus illum id doloremque magnam."}
                     />
                 </section>
 

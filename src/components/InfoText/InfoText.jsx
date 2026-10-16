@@ -8,22 +8,22 @@ export default function InfoText () {
     switch (params.infoTab) {
         case "agua":
             text.title = "ÁGUA"
-            text.desc = "sadasdasdasdsdasdsadsadasdasdasasdasdasdasd"
+            text.desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mattis mi, eget porta tellus. Proin lobortis lacus at tempus porttitor. Sed imperdiet tristique auctor. Aliquam ornare, sem a euismod mollis, nisi nunc euismod magna, in gravida augue sem a lorem. Phasellus et turpis pellentesque, viverra lacus et, suscipit velit. Vestibulum tortor urna, volutpat ac rhoncus id, tristique sit amet diam. Curabitur at vestibulum purus. Sed maximus massa sagittis "
             break;
         
         case "esgoto":
             text.title = "ESGOTO"
-            text.desc = "sla 2"
+            text.desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mattis mi, eget porta tellus. Proin lobortis lacus at tempus porttitor. Sed imperdiet tristique auctor. Aliquam ornare, sem a euismod mollis, nisi nunc euismod magna, in gravida augue sem a lorem. Phasellus et turpis pellentesque, viverra lacus et, suscipit velit. Vestibulum tortor urna, volutpat ac rhoncus id, tristique sit amet diam. Curabitur at vestibulum purus. Sed maximus massa sagittis "
             break;
 
         case "drenagem":
             text.title = "DRENAGEM"
-            text.desc = "sla 3"
+            text.desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mattis mi, eget porta tellus. Proin lobortis lacus at tempus porttitor. Sed imperdiet tristique auctor. Aliquam ornare, sem a euismod mollis, nisi nunc euismod magna, in gravida augue sem a lorem. Phasellus et turpis pellentesque, viverra lacus et, suscipit velit. Vestibulum tortor urna, volutpat ac rhoncus id, tristique sit amet diam. Curabitur at vestibulum purus. Sed maximus massa sagittis "
             break;
 
         case "residuos":
             text.title = "RESÍDUOS"
-            text.desc = "sla 4"
+            text.desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mattis mi, eget porta tellus. Proin lobortis lacus at tempus porttitor. Sed imperdiet tristique auctor. Aliquam ornare, sem a euismod mollis, nisi nunc euismod magna, in gravida augue sem a lorem. Phasellus et turpis pellentesque, viverra lacus et, suscipit velit. Vestibulum tortor urna, volutpat ac rhoncus id, tristique sit amet diam. Curabitur at vestibulum purus. Sed maximus massa sagittis "
             break;
     }
 

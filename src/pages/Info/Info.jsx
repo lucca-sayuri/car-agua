@@ -9,6 +9,10 @@ export default function Info() {
                 <InfoNav />
 
                 <InfoText />
+
+                <div className="data-title">
+                    <h2>DADOS DE CARAGUATATUBA</h2>
+                </div>
             </div>
         </>
     );

@@ -74,10 +74,21 @@ selectedcontent, option {
 
 .mural-grid {
     display: grid;
-    width: 100%;
+    width: 95%;
+    min-height: min-content;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     background-color: var(--color-green);
     border-radius: 20px;
-    overflow: hidden;
+}
+
+.grid-area {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-slate) #999999;
 }
