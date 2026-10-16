@@ -1,0 +1,112 @@
+.mainsection {
+    width: 80%;
+    height: 100%;
+}
+.boardsection {
+    width: 20%;
+    height: 100%;
+    background-color: #37a3a5;
+}
+.splitsection {
+    display: flex;
+}
+/*Y: pior programador de todos os tempos */
+/*Y: até tendei fazer a main ter 80% e a board 20%
+     mas não tava dividindo direito na minha tela ent eu fiz isso ai */
+
+#alert-title {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--color-zure);
+    border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/    min-width: 360px;
+    color: var(--color-white);
+    padding: 18px 20px;
+    max-width: 480px;
+    max-height: fit-content;
+}
+
+.login-box h1 {
+    font-size: 28px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+
+.form-login label, input {
+    font-family: var(--font-hanken);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-login label {
+    align-self: start;
+    margin-bottom: 4px;
+}
+
+.form-login input {
+    border: none;
+    outline: none;
+    background-color: #37a3a5;
+    box-sizing: border-box;
+    color: var(--color-white);
+    border-radius: 14px;
+    margin-bottom: 20px;
+    padding: 6px 10px;
+    width: 100%;
+    outline-width: 3px;
+    outline-style: hidden;
+}
+
+.form-login input:focus {
+    outline-style: solid;
+    outline-color: var(--color-white);
+    background-color: #5dcbcd;
+    color: var(--color-slate)
+}
+
+.form-login input::placeholder {
+    color: #5dd2d4;
+    font-weight: initial;
+}
+
+.form-login button {
+    border: none;
+    border-radius: 10px;
+    background-color: #57cb97;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 100px;
+    font-family: var(--font-lora);
+    color: var(--color-white);
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.form-login button:hover {
+    cursor: pointer;
+    background-color: #3fa392;
+}
+
+.login-redirects {
+    display: flex;
+    gap: 16px;
+}
+
+.login-redirects a {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--font-hanken);
+}

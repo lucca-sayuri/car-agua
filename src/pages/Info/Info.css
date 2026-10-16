@@ -1,0 +1,22 @@
+.info-area {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.data-title {
+    margin-top: 60px;
+    background-color: var(--color-zure);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-height: fit-content;
+    max-width: fit-content;
+    padding: 16px 150px;
+    color: var(--color-white);
+}

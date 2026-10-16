@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    background-color: var(--color-green);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 50px; tirei isso porque separava as coisas do header*/ 
+    justify-content: space-around; 
+}
+/*Y: Melhor programador de todos os tempos */
+/*Y: tive que mudar o position relative porque no Login vou usar header dentro de uma
+    Outra div/section; ai o texto ficava fora do header */
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--font-lora);
+    text-transform: uppercase;
+    position: relative;
+    left: 40px;
+}
+
+#logo-text {
+    text-decoration: none;
+    color: var(--color-slate);
+}
+
+.nav-bar {
+    font-family: var(--font-dm);
+    right: 10%;
+    display: flex;
+    justify-content: end;
+    gap: 35px;
+}
+
+.nav-bar * {
+    color: var(--color-slate);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.highlighted-nav-link {
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-slate);
+}
