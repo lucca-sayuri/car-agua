@@ -1,28 +1,69 @@
-import { createContext, useState, useContext } from 'react';
-//Y:Context é meio que só uma variavel que qualquer componente do site pode ler
-//Y:(só precisa importa eles no app [eu acho???])
+import { createContext, useState, useContext, useEffect } from 'react'
+import { supabase } from '../lib/supabaseClient'
 
-const AuthContext = createContext();
+const AuthContext = createContext(null)
 
 export const AuthProvider = ({ children }) => {
-    // o !! serve pra: se getItem for string = true e se for NULL = false
-    const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
+    const [session, setSession] = useState(null)
+    const [loading, setLoading] = useState(true)
 
-    const login = (token) => {
-        localStorage.setItem('token', token);
-        setIsAuthenticated(true);
-    };
+    useEffect(() => {
+        supabase.auth.getSession().then(({ data, error }) => {
+            if (error) {
+                console.error('Erro ao recuperar a sessão:', error.message)
+            }
 
-    const logout = () => {
-        localStorage.removeItem('token');
-        setIsAuthenticated(false);
-    };
+            setSession(data?.session ?? null)
+            setLoading(false)
+        })
+
+        const {
+            data: { subscription },
+        } = supabase.auth.onAuthStateChange((_event, newSession) => {
+            setSession(newSession)
+            setLoading(false)
+        })
+
+        return () => {
+            subscription.unsubscribe()
+        }
+    }, [])
+
+    const login = async (email, password) => {
+        const { data, error } = await supabase.auth.signInWithPassword({
+            email,
+            password,
+        })
+
+        if (error) throw error
+
+        return data
+    }
+
+    const logout = async () => {
+        const { error } = await supabase.auth.signOut()
+
+        if (error) throw error
+    }
+
+    const user = session?.user ?? null
+    const isAuthenticated = Boolean(user)
 
     return (
-        <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
-            {children} 
+        <AuthContext.Provider
+            value={{ user, session, isAuthenticated, loading, login, logout, }}
+        >
+            {children}
         </AuthContext.Provider>
-    ); //Bro is going to pay pension to react after this one :sob:
-};
+    )
+}
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+    const context = useContext(AuthContext)
+
+    if (!context) {
+        throw new Error('useAuth deve ser usado dentro de um AuthProvider')
+    }
+
+    return context
+}

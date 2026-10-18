@@ -1,0 +1,94 @@
+.mural-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    width: 60%;
+}
+
+.mural-search-box {
+    background-color: var(--color-zure);
+    display: flex;
+    max-height: fit-content;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 12px;
+    color: var(--color-white);
+}
+
+.mural-search-box h1 {
+    font-size: 26px;
+}
+
+.mural-search-area {
+    display: flex;
+    align-items: center;
+}
+
+select,
+::picker(select) {
+    appearance: base-select;
+}
+
+select::picker-icon {
+  transition: 0.2s rotate;
+}
+
+select:open::picker-icon {
+  rotate: 180deg;
+}
+
+option::checkmark {
+    display: none;
+}
+
+selectedcontent, option {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.mural-filter {
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 20px;
+    padding: 3px 12px;
+    width: 15%;
+    color: black;
+    font-family: var(--font-hanken);
+    font-size: 16px;
+    text-align: left;
+}
+
+.mural-filter option:checked {
+    background-color: #b0dcdd;
+    font-weight: bold;
+}
+
+.mural-filter hr {
+    border-width: 100%;
+}
+
+.mural-grid {
+    display: grid;
+    width: 95%;
+    min-height: min-content;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: var(--color-green);
+    border-radius: 20px;
+}
+
+.grid-area {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-slate) #999999;
+}

@@ -19,24 +19,18 @@
     text-align: center;
     text-transform: uppercase;
 }
-.login-area {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    background-color: #c8f9cc;
-} 
+
 .login-box {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 24px;
     background-color: var(--color-zure);
-    border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/
-    height: 248px;
-    min-width: 360px;
+    border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/    min-width: 360px;
     color: var(--color-white);
-    padding: 18px 20px; 
+    padding: 18px 20px;
+    max-width: 480px;
+    max-height: fit-content;
 }
 
 .login-box h1 {
@@ -62,26 +56,57 @@
 }
 
 .form-login input {
-    background-color: #37a3a5;
-    color: var(--color-white);
-    border-radius: 12px;
     border: none;
+    outline: none;
+    background-color: #37a3a5;
+    box-sizing: border-box;
+    color: var(--color-white);
+    border-radius: 14px;
     margin-bottom: 20px;
-    padding: 4px 6px;
+    padding: 6px 10px;
     width: 100%;
-    border-width: 2px;
-    border-style: hidden;;
+    outline-width: 3px;
+    outline-style: hidden;
 }
 
 .form-login input:focus {
+    outline-style: solid;
+    outline-color: var(--color-white);
     background-color: #5dcbcd;
-    border-style: solid;
-    border-color: var(--color-white);
-    outline: none;
     color: var(--color-slate)
 }
 
 .form-login input::placeholder {
     color: #5dd2d4;
     font-weight: initial;
+}
+
+.form-login button {
+    border: none;
+    border-radius: 10px;
+    background-color: #57cb97;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 100px;
+    font-family: var(--font-lora);
+    color: var(--color-white);
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.form-login button:hover {
+    cursor: pointer;
+    background-color: #3fa392;
+}
+
+.login-redirects {
+    display: flex;
+    gap: 16px;
+}
+
+.login-redirects a {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--font-hanken);
 }
