@@ -31,12 +31,15 @@ export default function Mural() {
 
                 <div className='grid-area'>
                     <div className='mural-grid'>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                </div>
+                        <Post
+                        pfp={placeholder}
+                        name={"john123"}
+                        email={"john123@gmail.com"}
+                        time={"15:34"}
+                        date={"19/08/26"}
+                        text={"Parece que os cara tão trabaiando"}
+                        />
+                    </div>
                 </div>
 
             </div>
