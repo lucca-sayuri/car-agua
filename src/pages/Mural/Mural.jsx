@@ -38,6 +38,8 @@ export default function Mural() {
                         time={"15:34"}
                         date={"19/08/26"}
                         text={"Parece que os cara tão trabaiando"}
+                        image={placeholder}
+                        id={"123"}
                         />
                     </div>
                 </div>

@@ -8,6 +8,15 @@
     padding: 12px 14px;
     color: var(--color-white);
     gap: 24px;
+    cursor: pointer;
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+.mural-post:hover {
+    background-color: rgb(25, 68, 97);
 }
 
 .post-pfp img {
@@ -47,4 +56,15 @@
 
 .post-bottom {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.post-text {
+    margin-bottom: 4px;
 }
