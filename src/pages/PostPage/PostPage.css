@@ -1,0 +1,80 @@
+.post-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    width: 50%;
+}
+
+.post-title {
+    background-color: var(--color-zure);
+    display: flex;
+    max-height: fit-content;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 85%;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 12px;
+    color: var(--color-white);
+    position: relative;
+}
+
+.post-title button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    font-size: 36px;
+    color: var(--color-white);
+    cursor: pointer;
+    position: absolute;
+    left: 16px;
+}
+
+.post-title button:hover {
+    color: rgb(198, 222, 233);
+}
+
+.focus-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-zure);
+    max-height: fit-content;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: var(--color-white);
+    gap: 20px;
+}
+
+.f-post-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.f-date-time {
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.f-post-bottom {
+    width: 85%;
+}
+
+.f-post-image {
+    width: 100%;
+}
+
+.f-post-image img {
+    width: 100%;
+}
