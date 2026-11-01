@@ -1,0 +1,92 @@
+/* Y: estilo da página individual do post (foco no post) */
+.focus-post {
+    max-width: 720px;
+    margin: 32px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-hanken, Arial, sans-serif);
+}
+
+/* Y: cabeçalho do post com foto de perfil, nome, email e data/hora */
+.f-post-top {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.post-pfp img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.f-post-user {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.f-user-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.f-user-email {
+    margin: 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.f-date-time {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: #666666;
+    margin-left: auto;
+}
+
+/* Y: conteúdo do post: texto e imagem */
+.f-post-bottom {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.f-post-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.f-post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Y: texto deixado mais escuro (triste) */
+.greyed-out {
+    opacity: 0.7;
+}
+
+/* Y: estados de carregamento, erro e não encontrado (quando o codigo se pa num funfa) */
+.loading,
+.error,
+.not-found {
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+}
+
+.error {
+    color: #c0392b;
+}
