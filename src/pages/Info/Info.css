@@ -20,3 +20,23 @@
     padding: 16px 150px;
     color: var(--color-white);
 }
+
+.charts {
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    background-color: var(--color-slate);
+    padding: 10px;
+    width: 100%;
+    gap: 3px;
+}
+
+.charts div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(58, 19, 90);
+    padding-top: 24px;
+    border: 5px solid black;
+    border-radius: 16px;        
+    box-sizing: border-box;
+}
