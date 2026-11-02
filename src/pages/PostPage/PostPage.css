@@ -1,77 +1,86 @@
-/* Y: estilo da página individual do post (foco no post) */
-.focus-post {
-    max-width: 720px;
-    margin: 32px auto;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: var(--font-hanken, Arial, sans-serif);
-}
-
-/* Y: cabeçalho do post com foto de perfil, nome, email e data/hora */
-.f-post-top {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.post-pfp img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.f-post-user {
+.post-area {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    align-items: center;
+    gap: 44px;
+    width: 50%;
 }
 
-.f-user-name {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
+.post-title {
+    background-color: var(--color-zure);
+    display: flex;
+    max-height: fit-content;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 85%;
+    align-items: center;
+    padding: 20px 0px;
+    border-radius: 12px;
+    color: var(--color-white);
+    position: relative;
 }
 
-.f-user-email {
-    margin: 0;
-    font-size: 14px;
-    color: #666666;
+.post-title button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    font-size: 36px;
+    color: var(--color-white);
+    cursor: pointer;
+    position: absolute;
+    left: 16px;
+}
+
+.post-title button:hover {
+    color: rgb(198, 222, 233);
+}
+
+.focus-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-zure);
+    max-height: fit-content;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: var(--color-white);
+    gap: 20px;
+}
+
+.f-post-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .f-date-time {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-size: 14px;
-    color: #666666;
     margin-left: auto;
-}
-
-/* Y: conteúdo do post: texto e imagem */
-.f-post-bottom {
-    margin-top: 20px;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-top: 0;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    align-items: end;
+    gap: 10px;
 }
 
-.f-post-text {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.6;
-    white-space: pre-wrap;
+.f-post-bottom {
+    width: 85%;
+}
+
+.f-post-image {
+    width: 100%;
 }
 
 .f-post-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
+    width: 100%;
 }
+
+/* Y: estilo da página individual do post (foco no post) */
+/* Y: cabeçalho do post com foto de perfil, nome, email e data/hora */
 
 /* Y: texto deixado mais escuro (triste) */
 .greyed-out {
