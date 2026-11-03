@@ -16,7 +16,14 @@
     flex-direction: column;
     text-align: center;
     max-height: fit-content;
-    max-width: fit-content;
+    width: 50%;
     padding: 16px 150px;
     color: var(--color-white);
+}
+
+.graph-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
 }

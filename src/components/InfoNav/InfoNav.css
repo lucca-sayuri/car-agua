@@ -7,7 +7,7 @@
     flex-direction: column;
     text-align: center;
     max-height: fit-content;
-    max-width: fit-content;
+    width: 70%;
     padding: 16px 100px;
 }
 

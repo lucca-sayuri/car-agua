@@ -1,0 +1,9 @@
+.footer-box {
+    background-color: var(--color-zure);
+    width: 100%;
+    height: 180px;
+    outline: 16px;
+    outline-style: solid;
+    outline-offset: -16px;
+    outline-color: #37a3a5;
+}
