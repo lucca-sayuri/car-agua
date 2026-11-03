@@ -20,13 +20,13 @@ createRoot(document.getElementById("root")).render(
       <BrowserRouter>
         <Routes>
           {/* L: estou tentando fazer várias rotas pro info, e cada uma vai mudar a navbar especifica do info (tá no canva) e também mudar o texto/graficos, mas vou tentar arrumar amanhã */}
-          <Route element={<CenteredLayout/>}>
+          <Route element={<CenteredLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/info/:infoTab" element={<Info />} />
             <Route path="/login" element={<Login />} />
-            <Route path="mural">
-              <Route index element={<Mural/>}/>
-              <Route path=":postid" element={<PostPage/>}/>
+            <Route path="/mural">
+              <Route index element={<Mural />} />
+              <Route path=":postid" element={<PostPage />} />
             </Route>
             <Route path="/noticias" element={<News />} />
             <Route path="/cadastro" element={<Register />} />

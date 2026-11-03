@@ -78,3 +78,24 @@
 .f-post-image img {
     width: 100%;
 }
+
+/* Y: estilo da página individual do post (foco no post) */
+/* Y: cabeçalho do post com foto de perfil, nome, email e data/hora */
+
+/* Y: texto deixado mais escuro (triste) */
+.greyed-out {
+    opacity: 0.7;
+}
+
+/* Y: estados de carregamento, erro e não encontrado (quando o codigo se pa num funfa) */
+.loading,
+.error,
+.not-found {
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+}
+
+.error {
+    color: #c0392b;
+}

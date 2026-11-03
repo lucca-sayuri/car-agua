@@ -15,11 +15,11 @@ export default function Mural() {
                         <button>
                             <selectedcontent></selectedcontent>
                         </button>
-                        <option><div>Filtrar</div></option>
-                        <option><div>Relato</div></option>
-                        <option><div>Local</div></option>
-                        <option><div>Protesto</div></option>
-                        <option><div>Clima</div></option>
+                        <option value='filtrar'><div>Filtrar</div></option> {/* ESSA dabaesaba TAVA DANDO ERRO NO CONSOLE POR ALGUM MOTIVO. */}
+                        <option value='relato'><div>Relato</div></option>
+                        <option value='local'><div>Local</div></option>
+                        <option value='protesto'><div>Protesto</div></option>
+                        <option value='clima'><div>Clima</div></option>
                     </select>
                     <div className='mural-search-area'>
                         <input type="search" name="search" className="search-bar" placeholder="Procurar..." />
