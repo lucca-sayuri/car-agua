@@ -1,11 +1,13 @@
 import './GraphCard.css'
 
-export default function GraphCard(props) {
+export default function GraphCard({ title, children }) {
     return (
         <>
             <div className='graph-card'>
-                <h3>{props.title}</h3>
+                <h3>{title}</h3>
                 <hr />
+
+                { children }
             </div>
         </>
     )

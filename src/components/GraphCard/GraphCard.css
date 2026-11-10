@@ -1,7 +1,7 @@
 .graph-card {
     background-color: #37a3a5;
     color: var(--color-white);
-    height: 240px;
+    height: 300px;
     padding: 16px 10px 16px 10px;
     display: flex;
     flex-direction: column;
@@ -19,4 +19,5 @@
     border-width: 1px;
     border-style: solid;
     border-color: var(--color-white);
+    margin-bottom: 20px;
 }

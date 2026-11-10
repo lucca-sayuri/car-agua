@@ -37,8 +37,17 @@
     font-family: var(--font-dm);
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.2s;
+}
+
+.info-nav-bar a:hover {
+    color: #a1d6cb;
 }
 
 a.highlighted-info-link {
+    color: #5dcbcd;
+}
+
+a.highlighted-info-link:hover {
     color: #5dcbcd;
 }
