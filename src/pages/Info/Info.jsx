@@ -21,10 +21,10 @@ export default function Info() {
                         <PiChart/>
                     </GraphCard>
                     <GraphCard title="Acesso à água potável">
-
+                        <PiChart/>
                     </GraphCard>
                     <GraphCard title="Lixo reciclado">
-                        
+                        <PiChart/>
                     </GraphCard>
                 </div>
             </div>
