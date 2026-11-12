@@ -1,15 +1,12 @@
-.mainsection {
+.login-area {
     width: 80%;
-    height: 100%;
-}
-.boardsection {
-    width: 20%;
-    height: 100%;
-    background-color: #37a3a5;
-}
-.splitsection {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+
 /*Y: pior programador de todos os tempos */
 /*Y: até tendei fazer a main ter 80% e a board 20%
      mas não tava dividindo direito na minha tela ent eu fiz isso ai */
@@ -28,13 +25,13 @@
     background-color: var(--color-zure);
     border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/    min-width: 360px;
     color: var(--color-white);
-    padding: 18px 20px;
+    padding: 30px 32px;
     max-width: 480px;
     max-height: fit-content;
 }
 
 .login-box h1 {
-    font-size: 28px;
+    font-size: 36px;
 }
 
 .form-login {
@@ -47,12 +44,13 @@
 .form-login label, input {
     font-family: var(--font-hanken);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .form-login label {
     align-self: start;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    font-size: 20px;
 }
 
 .form-login input {
@@ -61,9 +59,9 @@
     background-color: #37a3a5;
     box-sizing: border-box;
     color: var(--color-white);
-    border-radius: 14px;
+    border-radius: 40px;
     margin-bottom: 20px;
-    padding: 6px 10px;
+    padding: 10px 16px;
     width: 100%;
     outline-width: 3px;
     outline-style: hidden;
@@ -79,15 +77,16 @@
 .form-login input::placeholder {
     color: #5dd2d4;
     font-weight: initial;
+    font-size: 18px;
 }
 
 .form-login button {
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #57cb97;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 6px 100px;
+    padding: 10px 100px;
     font-family: var(--font-lora);
     color: var(--color-white);
     margin-top: 8px;

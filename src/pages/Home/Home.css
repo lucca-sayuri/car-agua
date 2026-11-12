@@ -1,0 +1,34 @@
+.home-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-scroll {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory y;
+    scroll-behavior: smooth;
+    height: 640px;
+    align-items: center;
+}
+
+.banner {
+    position: relative;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.banner-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
