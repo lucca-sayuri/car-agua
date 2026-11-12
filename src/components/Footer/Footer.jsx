@@ -34,6 +34,10 @@ export default function Footer() {
                         <a href="https://instagram.com"><FaSquareInstagram/></a>
                     </div>
 
+                    <div className='contacts'>
+                        <p>email.exemplo@email.com</p>
+                        <p>(+55) 98765-4321</p>
+                    </div>
                 </div>
             </div>
         </>

@@ -41,4 +41,30 @@
 
 .footer-right {
     width: 50%;
+    color: var(--color-white);
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-right a {
+    color: var(--color-white);
+    font-size: 54px;
+}
+
+.footer-right a:hover {
+    color: #a1d6cb;
+}
+
+.contacts {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }

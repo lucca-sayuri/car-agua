@@ -64,7 +64,7 @@
 
 .news-grid {
     display: grid;
-    width: 75%;
+    width: 60%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 80px;
 }
