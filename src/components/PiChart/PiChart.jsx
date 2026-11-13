@@ -1,5 +1,5 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Pie, Bar } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 //Y: da pra usar dados que vem de uma API mas mo trabalho
 ChartJS.register(ArcElement, Tooltip, Legend); //Y:eu nao tinha comentado aqui?... Tree-Shaking
 

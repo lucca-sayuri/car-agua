@@ -1,9 +1,9 @@
 import './Info.css';
-import PiChart from './chart';
 import InfoNav from "../../components/InfoNav/InfoNav";
 import InfoText from "../../components/InfoText/InfoText";
 import PiChart from "../../components/PiChart/PiChart";
 import GraphCard from "../../components/GraphCard/GraphCard";
+import BarChart from '../../components/BarChart/BarChart';
 
 export default function Info() {
     return (
@@ -22,7 +22,7 @@ export default function Info() {
                         <PiChart/>
                     </GraphCard>
                     <GraphCard title="Acesso à água potável">
-                        <PiChart/>
+                        <BarChart/>
                     </GraphCard>
                     <GraphCard title="Lixo reciclado">
                         <PiChart/>
