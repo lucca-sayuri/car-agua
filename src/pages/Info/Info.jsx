@@ -1,4 +1,5 @@
-import "./Info.css";
+import './Info.css';
+import PiChart from './chart';
 import InfoNav from "../../components/InfoNav/InfoNav";
 import InfoText from "../../components/InfoText/InfoText";
 import PiChart from "../../components/PiChart/PiChart";
