@@ -4,6 +4,7 @@ import InfoText from "../../components/InfoText/InfoText";
 import PiChart from "../../components/PiChart/PiChart";
 import GraphCard from "../../components/GraphCard/GraphCard";
 import BarChart from '../../components/BarChart/BarChart';
+import LineChart from '../../components/LineChart/LineChart'
 
 export default function Info() {
     return (
@@ -21,11 +22,11 @@ export default function Info() {
                     <GraphCard title="Acesso à água potável">
                         <PiChart/>
                     </GraphCard>
-                    <GraphCard title="Acesso à água potável">
+                    <GraphCard title="Descarte Impróprio">
                         <BarChart/>
                     </GraphCard>
                     <GraphCard title="Lixo reciclado">
-                        <PiChart/>
+                        <LineChart/>
                     </GraphCard>
                 </div>
             </div>

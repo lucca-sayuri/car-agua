@@ -6,8 +6,9 @@ export default function GraphCard({ title, children }) {
             <div className='graph-card'>
                 <h3>{title}</h3>
                 <hr />
-
-                { children }
+                    <div className='graph-container'>
+                        { children }
+                    </div>
             </div>
         </>
     )
