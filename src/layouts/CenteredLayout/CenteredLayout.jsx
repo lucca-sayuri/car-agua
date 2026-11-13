@@ -1,5 +1,6 @@
 import { Outlet } from "react-router"
 import Header from "../../components/Header/Header"
+import Footer from "../../components/Footer/Footer"
 import './CenteredLayout.css'
 
 export default function CenteredLayout() {
@@ -9,6 +10,7 @@ export default function CenteredLayout() {
             <div className="centered-layout">
                 <Outlet/>
             </div>
+            <Footer/>
         </>
     )
 }

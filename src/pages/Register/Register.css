@@ -1,3 +1,11 @@
+.register-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .register-box {
     display: flex;
     align-items: center;
@@ -6,13 +14,13 @@
     background-color: var(--color-zure);
     border-radius: 9px; /*acredito que o arredendamento do canva/2 = border-radiuspx*/    min-width: 360px;
     color: var(--color-white);
-    padding: 18px 20px; 
+    padding: 30px 32px; 
     max-width: 360px;
     max-height: fit-content;
 }
 
 .register-box h1 {
-    font-size: 28px;
+    font-size: 36px;
 }
 
 .form-register {
@@ -25,12 +33,12 @@
 .form-register label, input {
     font-family: var(--font-hanken);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .form-register label {
     align-self: start;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .form-register input {
@@ -39,9 +47,9 @@
     background-color: #37a3a5;
     box-sizing: border-box;
     color: var(--color-white);
-    border-radius: 14px;
+    border-radius: 40px;
     margin-bottom: 20px;
-    padding: 6px 10px;
+    padding: 10px 16px;
     width: 100%;
     outline-width: 3px;
     outline-style: hidden;
@@ -61,11 +69,11 @@
 
 .form-register button {
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #57cb97;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 6px 100px;
+    padding: 10px 100px;
     font-family: var(--font-lora);
     color: var(--color-white);
     margin-top: 8px;
