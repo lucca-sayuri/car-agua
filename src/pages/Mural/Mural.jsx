@@ -15,11 +15,11 @@ export default function Mural() {
                         <button>
                             <selectedcontent></selectedcontent>
                         </button>
-                        <option><div>Filtrar</div></option>
-                        <option><div>Relato</div></option>
-                        <option><div>Local</div></option>
-                        <option><div>Protesto</div></option>
-                        <option><div>Clima</div></option>
+                        <option value='filtrar'><div>Filtrar</div></option> {/* ESSA dabaesaba TAVA DANDO ERRO NO CONSOLE POR ALGUM MOTIVO. */}
+                        <option value='relato'><div>Relato</div></option>
+                        <option value='local'><div>Local</div></option>
+                        <option value='protesto'><div>Protesto</div></option>
+                        <option value='clima'><div>Clima</div></option>
                     </select>
                     <div className='mural-search-area'>
                         <input type="search" name="search" className="search-bar" placeholder="Procurar..." />
@@ -31,12 +31,17 @@ export default function Mural() {
 
                 <div className='grid-area'>
                     <div className='mural-grid'>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                </div>
+                        <Post
+                        pfp={placeholder}
+                        name={"john123"}
+                        email={"john123@gmail.com"}
+                        time={"15:34"}
+                        date={"19/08/26"}
+                        text={"Parece que os cara tão trabaiando"}
+                        image={placeholder}
+                        id={"123"}
+                        />
+                    </div>
                 </div>
 
             </div>

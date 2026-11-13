@@ -56,21 +56,22 @@ export default function Register() {
     return (
         <>
 
+        <div className='register-area'>
             <div className="register-box">
                 <h1>CADASTRO</h1>
 
                 <form className="form-register" onSubmit={handleSubmit}>
                     <label htmlFor="name">Nome</label>
-                    <input id="name" type="text" name="name" placeholder="Insira o seu nome" value={name} onChange={(event) => setName(event.target.value)} autoComplete="name" required />
+                    <input id="name" type="text" name="name" placeholder="Insira o seu nome..." value={name} onChange={(event) => setName(event.target.value)} autoComplete="name" required />
 
                     <label htmlFor="register-email">E-mail</label>
-                    <input id="register-email" type="email" name="email" placeholder="Insira o seu e-mail" value={email} onChange={(event) => setEmail(event.target.value)} autoComplete="email" required />
+                    <input id="register-email" type="email" name="email" placeholder="Insira o seu e-mail..." value={email} onChange={(event) => setEmail(event.target.value)} autoComplete="email" required />
 
                     <label htmlFor="register-password">Senha</label>
-                    <input id="register-password" type="password" name="password" placeholder="Insira a sua senha" value={password} onChange={(event) => setPassword(event.target.value)} autoComplete="new-password" minLength={8} required />
+                    <input id="register-password" type="password" name="password" placeholder="Insira a sua senha..." value={password} onChange={(event) => setPassword(event.target.value)} autoComplete="new-password" minLength={8} required />
 
                     <label htmlFor="password-confirm">Confirme sua senha</label>
-                    <input id="password-confirm" type="password" name="password-confirm" placeholder="Confirme sua senha" value={passwordConfirm} onChange={(event) => setPasswordConfirm(event.target.value)} autoComplete="new-password" minLength={8} required
+                    <input id="password-confirm" type="password" name="password-confirm" placeholder="Confirme sua senha..." value={passwordConfirm} onChange={(event) => setPasswordConfirm(event.target.value)} autoComplete="new-password" minLength={8} required
                     />
 
                     {errorMessage && <p role="alert">{errorMessage}</p>}
@@ -85,6 +86,7 @@ export default function Register() {
                     </div>
                 </form>
             </div>
+        </div>
         </>
     )
 }

@@ -1,6 +1,10 @@
-import "./Info.css";
+import './Info.css';
 import InfoNav from "../../components/InfoNav/InfoNav";
 import InfoText from "../../components/InfoText/InfoText";
+import PiChart from "../../components/PiChart/PiChart";
+import GraphCard from "../../components/GraphCard/GraphCard";
+import BarChart from '../../components/BarChart/BarChart';
+import LineChart from '../../components/LineChart/LineChart'
 
 export default function Info() {
     return (
@@ -12,6 +16,18 @@ export default function Info() {
 
                 <div className="data-title">
                     <h2>DADOS DE CARAGUATATUBA</h2>
+                </div>
+
+                <div className="graph-grid">
+                    <GraphCard title="Acesso à água potável">
+                        <PiChart/>
+                    </GraphCard>
+                    <GraphCard title="Descarte Impróprio">
+                        <BarChart/>
+                    </GraphCard>
+                    <GraphCard title="Lixo reciclado">
+                        <LineChart/>
+                    </GraphCard>
                 </div>
             </div>
         </>

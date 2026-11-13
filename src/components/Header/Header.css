@@ -7,9 +7,7 @@ header {
     /* margin-bottom: 50px; tirei isso porque separava as coisas do header*/ 
     justify-content: space-around; 
 }
-/*Y: Melhor programador de todos os tempos */
-/*Y: tive que mudar o position relative porque no Login vou usar header dentro de uma
-    Outra div/section; ai o texto ficava fora do header */
+
 .logo {
     font-size: 40px;
     font-weight: bold;
@@ -32,6 +30,27 @@ header {
     gap: 35px;
 }
 
+.nav-bar a {
+    position: relative;
+    transition: all 0.2s;
+}
+
+.nav-bar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--color-slate);
+    transition: width 0.2s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
 .nav-bar * {
     color: var(--color-slate);
     text-decoration: none;
@@ -41,5 +60,8 @@ header {
 
 .highlighted-nav-link {
     font-weight: bold;
-    border-bottom: 2px solid var(--color-slate);
+}
+
+.nav-bar > .highlighted-nav-link::after {
+     width: 100%;
 }
