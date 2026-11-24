@@ -13,11 +13,12 @@ export default function WriteArea({pfp}) {
                         <img src={pfp} alt="Profile Picture"/>
                     </figure>
 
-                    <input type="text" name="write-input" className='write-input' placeholder='Comece a escrever no mural...'/>
+                    <textarea name="mural-text" className='mural-text' placeholder='Comece a escrever no mural...' maxLength="300"></textarea>
                 </div>
                 <div className='bottom-area'>
                     <div className='icons-area'>
-                        <IoMdImage/>
+                        <input type="file" name="img-input" id='img-input' accept='.png, .jpg, .jpeg, .webp' multiple/>
+                        <label htmlFor="img-input" className='img-button'><IoMdImage/></label>
                         <MdOutlineGifBox/>
                         <HiOutlineEmojiHappy/>
                     </div>

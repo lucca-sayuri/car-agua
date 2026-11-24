@@ -4,6 +4,7 @@
     flex-direction: column;
     padding: 10px 10px;
     box-sizing: border-box;
+    height: fit-content;
     width: 90%;
     border-radius: 8px;
 }
@@ -37,22 +38,25 @@
     background-color: #59a393;
 }
 
-.write-input {
+.mural-text {
     border: none;
     outline: none;
     background-color: transparent;
     field-sizing: content;
-    height: fit-content;
+    min-height: fit-content;
     font-size: 18px;
     font-weight: normal;
+    font-family: var(--font-hanken);
     border-color: #5dcbcd;
     position: relative;
     left: 10px;
     caret-color: #59a393;
     color: var(--color-white);
+    inline-size: 60%;
+    resize: none;
 }
 
-.write-input::placeholder {
+.mural-text::placeholder {
     color: #5dcbcd;
     border-bottom: 2px solid #5dcbcd;
 }
@@ -69,7 +73,17 @@
     width: 40px;
     border-radius: 50px;
     overflow: hidden;
+    margin-top: 0;
+    margin-bottom: auto;
 }
+
+#img-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+}
+
 
 .icons-area {
     position: relative;
