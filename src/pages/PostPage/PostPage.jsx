@@ -3,14 +3,15 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { useLocation, useNavigate } from 'react-router'
 import { FaArrowLeft } from "react-icons/fa6"
-import { supabase } from '../../lib/supabaseClient'
+import { fetchPostById } from '../../lib/posts'
 import './PostPage.css'
 
 export default function PostPage() {
     // Y: navegação do Lucca
     const location = useLocation()
     let navigate = useNavigate()
-    const props = location.state.props
+    // se abrir o link direto (sem clicar no mural) não existe location.state, então usa ?.
+    const props = location.state?.props
 
     const { postid } = useParams()
 
@@ -29,26 +30,15 @@ export default function PostPage() {
         // Y: flag pra evitar setState depois que o componente some, clássico problema do react
         let ignore = false
 
-        async function fetchPost() {
-            // Y: se não tem id não faz nada
-            if (!postid) return
-
+        async function loadPost() {
             try {
-                const { data, error: supabaseError } = await supabase
-                    .from('posts')
-                    .select('*')
-                    .eq('id', Number(postid))
-                    .single()
+                // fetchPostById já converte as colunas (foto_perfil, nome_usuario...) pro formato do componente
+                const data = await fetchPostById(postid)
 
-              if (ignore) return
-              
-                if (supabaseError) {
-                    setError(supabaseError.message)
-                } else {
-                    setPost(data)
-                }
+                if (ignore) return
+                setPost(data)
             } catch (err) {
-                // Y: se explodiu de outra forma também joga no erro
+                // Y: se explodiu de alguma forma joga no erro
                 if (ignore) return
                 setError(err.message)
             } finally {
@@ -57,7 +47,7 @@ export default function PostPage() {
             }
         }
 
-        fetchPost()
+        loadPost()
 
         return () => {
             ignore = true
@@ -71,8 +61,6 @@ export default function PostPage() {
     // Y: define os dados: prioriza o post do supabase, senão usa os props antigos
     const data = post || props
 
-  // Y: se não tem post nem props, mostra brutal, não sobrou.
-  //mas lwkey nao vai nem chega nessa parte porque falha no busca do supabase
     if (!data) return <div className='not-found'>Post não encontrado.</div>
 
     return (
@@ -102,13 +90,14 @@ export default function PostPage() {
 
                     <div className='f-post-bottom'>
                         <p className='f-post-text'>{data.text}</p>
-                        <figure className='f-post-image'>
-                            <img src={data.image} alt="image" />
-                        </figure>
+                        {data.image && (
+                            <figure className='f-post-image'>
+                                <img src={data.image} alt="image" />
+                            </figure>
+                        )}
                     </div>
                 </div>
             </div>
         </>
     )
 }
-//pfvr funfa

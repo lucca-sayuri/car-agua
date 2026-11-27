@@ -23,9 +23,12 @@ export default function Post(props) {
 
                     <div className='post-bottom'>
                         <p className='post-text'>{props.text}</p>
-                        <figure className='post-image'>
-                            <img src={props.image} alt="image" />
-                        </figure>
+                        {/* só renderiza a imagem se o post tiver uma (foto_post pode ser NULL) */}
+                        {props.image && (
+                            <figure className='post-image'>
+                                <img src={props.image} alt="image" />
+                            </figure>
+                        )}
                     </div>
                 </div>
             </Link>
