@@ -80,6 +80,7 @@ selectedcontent, option {
     gap: 40px;
     background-color: var(--color-green);
     border-radius: 20px;
+    padding: 10px;
 }
 
 .grid-area {

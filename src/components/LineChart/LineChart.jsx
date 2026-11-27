@@ -65,6 +65,6 @@ const options = {
     }
 };
 
-export default function BarChart() {
+export default function LineChart() {
     return <Line options={options} data={LineData}/>
 }
